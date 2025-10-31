@@ -1,0 +1,82 @@
+<svg width="512" height="512" viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo con gradiente -->
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0D9488;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+        </linearGradient>
+
+        <linearGradient id="folderGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+            <stop offset="100%" style="stop-color:#F1F5F9;stop-opacity:0.9" />
+        </linearGradient>
+
+        <!-- Sombra suave -->
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+        </filter>
+
+        <filter id="folderShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.15"/>
+        </filter>
+    </defs>
+
+    <!-- Fondo redondeado -->
+    <rect width="512" height="512" rx="115" fill="url(#bgGradient)"/>
+
+    <!-- Carpeta principal (más grande, en la parte superior) -->
+    <g filter="url(#folderShadow)">
+        <path d="M 140 160 L 140 140 Q 140 130 150 130 L 220 130 L 240 150 L 360 150 Q 370 150 370 160 L 370 240 Q 370 250 360 250 L 150 250 Q 140 250 140 240 Z" fill="url(#folderGradient)" stroke="#0D9488" stroke-width="3"/>
+        <!-- Tab de la carpeta -->
+        <path d="M 220 130 L 230 140 L 240 150 L 220 150 Z" fill="#E2E8F0" opacity="0.6"/>
+    </g>
+
+    <!-- Carpeta secundaria (a la derecha, ligeramente detrás) -->
+    <g filter="url(#folderShadow)" opacity="0.85">
+        <path d="M 200 220 L 200 200 Q 200 190 210 190 L 270 190 L 287 207 L 390 207 Q 400 207 400 217 L 400 290 Q 400 300 390 300 L 210 300 Q 200 300 200 290 Z" fill="url(#folderGradient)" stroke="#0D9488" stroke-width="3"/>
+        <path d="M 270 190 L 278 198.5 L 287 207 L 270 207 Z" fill="#E2E8F0" opacity="0.6"/>
+    </g>
+
+    <!-- Flechas de flujo (indicando organización) -->
+    <g filter="url(#shadow)">
+        <!-- Flecha 1: desde arriba hacia carpetas -->
+        <path d="M 256 80 L 256 110" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+        <path d="M 256 110 L 246 100 M 256 110 L 266 100" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+        <!-- Flecha 2: distribuyendo hacia las carpetas -->
+        <path d="M 256 270 Q 220 300 180 330" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-dasharray="5,8" fill="none" opacity="0.9"/>
+        <path d="M 180 330 L 190 325 M 180 330 L 183 318" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+        <path d="M 256 270 Q 285 300 315 330" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-dasharray="5,8" fill="none" opacity="0.9"/>
+        <path d="M 315 330 L 305 328 M 315 330 L 312 318" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.9"/>
+    </g>
+
+    <!-- Documentos/archivos (iconos pequeños arriba) -->
+    <g opacity="0.95">
+        <!-- Documento 1 -->
+        <rect x="230" y="50" width="20" height="26" rx="2" fill="#FFFFFF" filter="url(#folderShadow)"/>
+        <line x1="234" y1="58" x2="246" y2="58" stroke="#0D9488" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="234" y1="63" x2="246" y2="63" stroke="#0D9488" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="234" y1="68" x2="242" y2="68" stroke="#0D9488" stroke-width="1.5" stroke-linecap="round"/>
+
+        <!-- Documento 2 -->
+        <rect x="255" y="50" width="20" height="26" rx="2" fill="#FFFFFF" filter="url(#folderShadow)"/>
+        <line x1="259" y1="58" x2="271" y2="58" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="259" y1="63" x2="271" y2="63" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="259" y1="68" x2="267" y2="68" stroke="#14B8A6" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Carpetas destino abajo -->
+    <g filter="url(#folderShadow)" opacity="0.9">
+        <!-- Carpeta izquierda -->
+        <path d="M 120 350 L 120 340 Q 120 335 125 335 L 160 335 L 170 345 L 220 345 Q 225 345 225 350 L 225 390 Q 225 395 220 395 L 125 395 Q 120 395 120 390 Z" fill="url(#folderGradient)" stroke="#0D9488" stroke-width="2.5"/>
+
+        <!-- Carpeta derecha -->
+        <path d="M 270 350 L 270 340 Q 270 335 275 335 L 310 335 L 320 345 L 370 345 Q 375 345 375 350 L 375 390 Q 375 395 370 395 L 275 395 Q 270 395 270 390 Z" fill="url(#folderGradient)" stroke="#0D9488" stroke-width="2.5"/>
+    </g>
+
+    <!-- Detalles brillantes (highlights) -->
+    <ellipse cx="180" cy="170" rx="4" ry="4" fill="#FFFFFF" opacity="0.4"/>
+    <ellipse cx="300" cy="230" rx="3" ry="3" fill="#FFFFFF" opacity="0.4"/>
+</svg>

@@ -1,0 +1,24 @@
+File Organizer Pro – License Agreement
+Version 1.0
+
+Copyright (c) [Año] [Tu nombre o alias]
+
+Permission is hereby granted to the purchaser of this product
+to use, modify and install this software for personal and
+commercial purposes under the following conditions:
+
+1. You may NOT redistribute, resell, or re-upload this software
+   (or modified versions) as your own.
+
+2. One license = one user. You can use it on multiple devices
+   belonging to you.
+
+3. The author is not responsible for any data loss or damage
+   resulting from misuse of this software.
+
+4. The software is provided “as is”, without warranty of any kind.
+
+──────────────────────────────
+📧 Author: [Tu email o GitHub]
+🌐 Website: [tu web opcional]
+──────────────────────────────

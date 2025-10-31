@@ -1,0 +1,213 @@
+[
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "organize_files",
+        "importPath": "organizer",
+        "description": "organizer",
+        "isExtraImport": true,
+        "detail": "organizer",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "THEME_PALETTES",
+        "importPath": "palette",
+        "description": "palette",
+        "isExtraImport": true,
+        "detail": "palette",
+        "documentation": {}
+    },
+    {
+        "label": "LIGHT_PALETTE",
+        "importPath": "palette",
+        "description": "palette",
+        "isExtraImport": true,
+        "detail": "palette",
+        "documentation": {}
+    },
+    {
+        "label": "TRANSLATIONS",
+        "importPath": "translations",
+        "description": "translations",
+        "isExtraImport": true,
+        "detail": "translations",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "FileOrganizerApp",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class FileOrganizerApp:\n    def __init__(self, root):\n        self.root = root\n        self.lang = \"es\"  # default language\n        self.root.title(TRANSLATIONS[self.lang][\"ui\"][\"title\"])\n        self.root.geometry(\"650x580\") \n        self.last_moves = []  # [(dest_final, origen_inicial), ...]\n        # State variables\n        self.source_folder = tk.StringVar()\n        self.dest_folder = tk.StringVar()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "organize_files",
+        "kind": 2,
+        "importPath": "organizer",
+        "description": "organizer",
+        "peekOfCode": "def organize_files(\n    source_folder: str,\n    dest_folder: Optional[str] = None,\n    progress_callback: Optional[Callable[[float], None]] = None,\n    log_callback: Optional[Callable[[str], None]] = None,\n    messages: Optional[Dict[str, str]] = None,\n) -> List[Tuple[str, str]]:\n    \"\"\"\n    Organiza archivos y devuelve una lista de movimientos [(dest_final, origen_inicial), ...]\n    para poder deshacerlos después.",
+        "detail": "organizer",
+        "documentation": {}
+    },
+    {
+        "label": "FILE_TYPES",
+        "kind": 5,
+        "importPath": "organizer",
+        "description": "organizer",
+        "peekOfCode": "FILE_TYPES = {\n    \"Images\": [\".jpg\", \".jpeg\", \".png\", \".gif\", \".bmp\"],\n    \"Documents\": [\".pdf\", \".docx\", \".txt\", \".pptx\", \".xlsx\"],\n    \"Videos\": [\".mp4\", \".mov\", \".avi\", \".mkv\"],\n    \"Music\": [\".mp3\", \".wav\", \".aac\"],\n    \"Archives\": [\".zip\", \".rar\", \".7z\"],\n}\ndef _unique_destination(dest_path: Path) -> Path:\n    \"\"\"\n    Si dest_path existe, genera un nombre único: \"name (1).ext\", \"name (2).ext\", ...",
+        "detail": "organizer",
+        "documentation": {}
+    },
+    {
+        "label": "LIGHT_PALETTE",
+        "kind": 5,
+        "importPath": "palette",
+        "description": "palette",
+        "peekOfCode": "LIGHT_PALETTE = {\n    # Fondo General: Gris muy claro con toque cálido\n    \"bg\": \"#F8FAFC\", \n    # Texto Principal: Gris pizarra muy oscuro para máximo contraste\n    \"fg\": \"#0F172A\", \n    # Texto Muted/Secundario: Gris medio equilibrado\n    \"muted\": \"#64748B\", \n    # Borde de Elementos: Gris claro suave\n    \"border\": \"#CBD5E1\", \n    # Primario (Acción Principal): Teal vibrante y profesional",
+        "detail": "palette",
+        "documentation": {}
+    },
+    {
+        "label": "DARK_PALETTE",
+        "kind": 5,
+        "importPath": "palette",
+        "description": "palette",
+        "peekOfCode": "DARK_PALETTE = {\n    # Fondo General: Gris azulado oscuro profundo\n    \"bg\": \"#0F172A\", \n    # Texto Principal: Casi blanco con leve tinte azul\n    \"fg\": \"#F1F5F9\", \n    # Texto Muted/Secundario: Gris claro equilibrado\n    \"muted\": \"#94A3B8\", \n    # Borde de Elementos: Gris medio-oscuro con contraste suficiente\n    \"border\": \"#475569\", \n    # Primario (Acción Principal): Teal brillante para alta visibilidad",
+        "detail": "palette",
+        "documentation": {}
+    },
+    {
+        "label": "THEME_PALETTES",
+        "kind": 5,
+        "importPath": "palette",
+        "description": "palette",
+        "peekOfCode": "THEME_PALETTES = {\n    \"light\": LIGHT_PALETTE,\n    \"dark\": DARK_PALETTE\n}\n# PALETTE por defecto (alias de LIGHT_PALETTE) para compatibilidad\nPALETTE = LIGHT_PALETTE\n# Mejoras implementadas:\n# 1. Mayor contraste en ambos temas para mejor legibilidad\n# 2. Colores primarios más vibrantes y distintivos\n# 3. Bordes más visibles en modo oscuro",
+        "detail": "palette",
+        "documentation": {}
+    },
+    {
+        "label": "PALETTE",
+        "kind": 5,
+        "importPath": "palette",
+        "description": "palette",
+        "peekOfCode": "PALETTE = LIGHT_PALETTE\n# Mejoras implementadas:\n# 1. Mayor contraste en ambos temas para mejor legibilidad\n# 2. Colores primarios más vibrantes y distintivos\n# 3. Bordes más visibles en modo oscuro\n# 4. Superficie con mejor separación del fondo en modo oscuro\n# 5. Colores de acento más brillantes para elementos interactivos\n# 6. Paleta teal/cyan consistente y moderna en ambos temas",
+        "detail": "palette",
+        "documentation": {}
+    },
+    {
+        "label": "TRANSLATIONS",
+        "kind": 5,
+        "importPath": "translations",
+        "description": "translations",
+        "peekOfCode": "TRANSLATIONS = {\n    \"en\": {\n        \"ui\": {\n            \"title\": \"File Organizer Pro\",\n            \"language\": \"Language\",\n            \"source\": \"Source Folder:\",\n            \"browse\": \"Browse\",\n            \"destination\": \"Destination Folder (optional):\",\n            \"organize\": \"🧹 Organize Files\",\n            \"undo\": \"↩️ Undo last\",",
+        "detail": "translations",
+        "documentation": {}
+    }
+]

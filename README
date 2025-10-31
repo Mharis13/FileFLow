@@ -1,0 +1,70 @@
+────────────────────────────────────────────
+📦 FILE ORGANIZER PRO
+────────────────────────────────────────────
+
+🧹 Automatically organizes your files by type and extension.
+Save time and keep your folders clean and tidy in seconds!
+
+────────────────────────────────────────────
+⚙️ HOW TO USE
+────────────────────────────────────────────
+1️⃣ Run the program (FileOrganizerPro.exe)
+2️⃣ Select the folder you want to organize
+3️⃣ Click "Organize Files"
+4️⃣ Done! Files will be moved into subfolders like:
+    - Documents
+    - Images
+    - Videos
+    - Music
+    - Others
+
+Optional:
+- Use the “Undo” button to restore files to their original locations.
+- All changes are logged in “organizer_log.txt”.
+
+────────────────────────────────────────────
+✨ FEATURES
+────────────────────────────────────────────
+✔ Clean, modern graphical interface (GUI)
+✔ Automatic file classification by extension
+✔ Undo and logging system
+✔ Supports English and Spanish
+✔ 100% offline – no internet required
+✔ Compatible with Windows 10/11
+
+────────────────────────────────────────────
+💾 SYSTEM REQUIREMENTS
+────────────────────────────────────────────
+• Windows 10 / 11
+• No installation required (standalone EXE)
+• Optional: Python 3.10+ (for script version)
+
+────────────────────────────────────────────
+👨‍💻 AUTHOR
+────────────────────────────────────────────
+Developed by: [Mharis13]
+Version: 1.0  
+Release date: [10/2025]  
+
+────────────────────────────────────────────
+🇪🇸 INSTRUCCIONES EN ESPAÑOL
+────────────────────────────────────────────
+1️⃣ Ejecuta el programa (FileOrganizerPro.exe)
+2️⃣ Selecciona la carpeta que quieres organizar
+3️⃣ Haz clic en “Organize Files”
+4️⃣ ¡Listo! Tus archivos se moverán a carpetas como:
+    - Documentos
+    - Imágenes
+    - Vídeos
+    - Música
+    - Otros
+
+Botón "Undo" → para deshacer la última organización.
+Archivo “organizer_log.txt” → registra todos los cambios.
+
+────────────────────────────────────────────
+📞 SUPPORT
+────────────────────────────────────────────
+If you have questions or suggestions:
+📧 Contact: [mario12ban@outlook.com]
+────────────────────────────────────────────
