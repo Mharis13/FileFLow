@@ -206,7 +206,7 @@
         "kind": 5,
         "importPath": "translations",
         "description": "translations",
-        "peekOfCode": "TRANSLATIONS = {\n    \"en\": {\n        \"ui\": {\n            \"title\": \"File Organizer Pro\",\n            \"language\": \"Language\",\n            \"source\": \"Source Folder:\",\n            \"browse\": \"Browse\",\n            \"destination\": \"Destination Folder (optional):\",\n            \"organize\": \"🧹 Organize Files\",\n            \"undo\": \"↩️ Undo last\",",
+        "peekOfCode": "TRANSLATIONS = {\n    \"en\": {\n        \"ui\": {\n            \"title\": \"File Flow\",\n            \"language\": \"Language\",\n            \"source\": \"Source Folder:\",\n            \"browse\": \"Browse\",\n            \"destination\": \"Destination Folder (optional):\",\n            \"organize\": \"🧹 Organize Files\",\n            \"undo\": \"↩️ Undo last\",",
         "detail": "translations",
         "documentation": {}
     }

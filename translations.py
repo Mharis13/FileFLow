@@ -1,7 +1,7 @@
 TRANSLATIONS = {
     "en": {
         "ui": {
-            "title": "File Organizer Pro",
+            "title": "File Flow",
             "language": "Language",
             "source": "Source Folder:",
             "browse": "Browse",
@@ -31,7 +31,7 @@ TRANSLATIONS = {
     },
     "es": {
         "ui": {
-            "title": "File Organizer Pro",
+            "title": "File Flow",
             "language": "Idioma",
             "source": "Carpeta de origen:",
             "browse": "Examinar",
@@ -61,7 +61,7 @@ TRANSLATIONS = {
     },
     "fr": {
         "ui": {
-            "title": "File Organizer Pro",
+            "title": "File Flow",
             "language": "Langue",
             "source": "Dossier source :",
             "browse": "Parcourir",
@@ -91,7 +91,7 @@ TRANSLATIONS = {
     },
     "de": {
         "ui": {
-            "title": "File Organizer Pro",
+            "title": "File Flow",
             "language": "Sprache",
             "source": "Quellordner:",
             "browse": "Durchsuchen",
@@ -121,7 +121,7 @@ TRANSLATIONS = {
     },
     "it": {
         "ui": {
-            "title": "File Organizer Pro",
+            "title": "File Flow",
             "language": "Lingua",
             "source": "Cartella di origine:",
             "browse": "Sfoglia",
@@ -151,7 +151,7 @@ TRANSLATIONS = {
     },
     "pt": {
         "ui": {
-            "title": "File Organizer Pro",
+            "title": "File Flow",
             "language": "Idioma",
             "source": "Pasta de origem:",
             "browse": "Procurar",
